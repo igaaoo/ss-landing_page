@@ -1,7 +1,9 @@
 export function Duvidas() {
   return (
-    <div>
-      <p>Dúvidas</p>
+    <div className="mainBody" id="duvidas">
+      <div className="insideBody">
+        <p>Duvidas</p>
+      </div>
     </div>
   )
 }

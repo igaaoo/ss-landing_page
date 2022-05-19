@@ -1,7 +1,9 @@
 export function Contato() {
   return (
-    <div>
-      <p>Contato</p>
+    <div className="mainBody" id="contato">
+      <div className="insideBody">
+        <p>Contato</p>
+      </div>
     </div>
   )
 }
