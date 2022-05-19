@@ -5,7 +5,7 @@ export default function Nav() {
     <header>
       <nav>
         <a href="#inicio">
-          <h1>SPACE STYLE</h1>
+          <h2>SPACE STYLE</h2>
         </a>
 
         <ul>
