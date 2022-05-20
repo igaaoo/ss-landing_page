@@ -30,6 +30,33 @@ export default function Nav() {
             </a>
           </li>
         </ul>
+
+        <h2 className="nav-item dropdown">
+          <a
+            className="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdownMenuLink"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <p>MENU</p>
+          </a>
+          <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a className="dropdown-item" href="#sobre">
+              Sobre
+            </a>
+            <a className="dropdown-item" href="#peças">
+              Principais Peças
+            </a>
+            <a className="dropdown-item" href="#duvidas">
+              Dúvidas Frequentes
+            </a>
+            <a className="dropdown-item" href="#contato">
+              Contato
+            </a>
+          </div>
+        </h2>
       </nav>
     </header>
   )

@@ -22,6 +22,7 @@ export function Peças() {
       <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
         <SwiperSlide>
           <img src={Terra} />
+          <h1>alo</h1>
         </SwiperSlide>
         <SwiperSlide>
           <img src={Lua} />
