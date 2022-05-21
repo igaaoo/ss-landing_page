@@ -1,4 +1,5 @@
-# ss-landing_page
+# ⚛ ss-landing_page
+ Landing page made to a fictitious company with React and Typescript.
  
  ## Screenshots:
  
