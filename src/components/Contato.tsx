@@ -1,3 +1,5 @@
+import ContatoImg from '../images/contatoImg4.jpg'
+
 export function Contato() {
   // Alerta na tela
   function alert() {
@@ -6,6 +8,7 @@ export function Contato() {
 
   return (
     <div className="mainBody" id="contato">
+      <img src={ContatoImg} />
       <div className="insideBody">
         {/* Título da sessão */}
         <h3 className="titulo">Entre em contato</h3>
