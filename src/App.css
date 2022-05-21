@@ -34,6 +34,27 @@ a:hover {
   height: 100%;
 }
 
+.titulo {
+  font-family: 'Titillium Web', sans-serif;
+  margin-bottom: 30px;
+  text-align: start;
+}
+
+.contato {
+  width: 100%;
+  height: 100vh;
+}
+
+.form-control {
+  margin: 10px 0;
+}
+
+.contato .btn {
+  margin: 10px 0;
+  font-size: 15px;
+  width: 30vw;
+}
+
 #inicio {
   background: url(./images/mainImg.jpg);
   background-repeat: no-repeat;
@@ -119,20 +140,49 @@ ul li:hover::before {
 }
 
 .swiper-slide {
-  text-align: center;
+  text-align: start;
   font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.swiper-slide img {
+.imgCarousel {
   width: 100%;
   position: absolute;
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  filter: blur(1px);
+  filter: blur(4px);
+}
+
+.roupas {
+  background-color: rgba(177, 177, 177, 0.171);
+  border-radius: 10px;
+  padding: 2.5vw;
+  width: 18vw;
+}
+
+.textoCarousel {
+  font-family: 'Titillium Web', sans-serif;
+  width: 50%;
+  margin-right: 9vw;
+  margin-bottom: 9vw;
+}
+
+.textoCarousel h2 {
+  font-size: 35px;
+}
+
+.textoCarousel p {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.textoCarousel .btn {
+  font-family: 'Titillium Web', sans-serif;
+  width: 65%;
 }
 
 /*#endregion*/
@@ -153,8 +203,8 @@ ul li:hover::before {
 
 .descricao h3 {
   margin-top: 4%;
-  font-size: 1.5vw;
-  color: rgb(228, 228, 228);
+  font-size: 15px;
+  color: whitesmoke;
   line-height: 130%;
 }
 
@@ -166,6 +216,29 @@ ul li:hover::before {
 
 /*#endregion*/
 
+.card {
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Titillium Web', sans-serif;
+  color: whitesmoke;
+  background-color: rgba(245, 245, 245, 0);
+  border: whitesmoke 1px solid;
+  border-radius: 0;
+}
+
+.card button {
+  width: 100%;
+  text-decoration: none;
+  color: whitesmoke;
+  margin: 0;
+  text-align: start;
+  font-size: 90%;
+}
+
+.card button:hover {
+  color: whitesmoke;
+}
+
 /*#region Responsive configs*/
 @media only screen and (min-width: 601px) {
   .nav-item {
@@ -174,6 +247,7 @@ ul li:hover::before {
 }
 
 @media only screen and (max-width: 600px) {
+  /*#region Nav Responsive*/
   .nav-item {
     padding: 0;
     margin: 0;
@@ -182,7 +256,7 @@ ul li:hover::before {
   .dropdown-toggle {
     display: flex;
     flex-direction: column;
-    padding: 1px 10px;
+    padding: 10px 10px;
     margin: 0;
     font-size: 35px;
   }
@@ -191,11 +265,6 @@ ul li:hover::before {
     font-size: 15px;
     margin: 0;
     padding: 0;
-  }
-
-  #inicio {
-    background-position: 40% 0;
-    background-size: 100vh;
   }
 
   nav {
@@ -213,16 +282,38 @@ ul li:hover::before {
     display: none;
   }
 
+  /*#endregion*/
+
+  #inicio {
+    background-position: 40% 0;
+    background-size: 100vh;
+  }
+
+  /*#region Carousel Responsive*/
+
   .descricao {
     width: 40%;
     margin: 10% 3%;
   }
+
+  .textoCarousel .btn {
+    width: 65%;
+    font-size: 3vw;
+  }
+
+  /*#endregion*/
 }
 
 @media only screen and (max-width: 450px) {
   .mainBody {
     height: auto;
   }
+
+  nav h2 {
+    margin-left: 2vw;
+  }
+
+  /*#region Carousel Responsive*/
 
   .descricao {
     width: 100%;
@@ -243,8 +334,23 @@ ul li:hover::before {
     width: 90%;
   }
 
-  nav h2 {
-    margin-left: 2vw;
+  .textoCarousel {
+    width: 40%;
+    margin: 0 10px;
   }
+
+  .textoCarousel p {
+    font-size: 15px;
+  }
+
+  .textoCarousel h2 {
+    font-size: 25px;
+  }
+
+  .roupas {
+    width: 30%;
+  }
+
+  /*#endregion*/
 }
 /*#endregion*/

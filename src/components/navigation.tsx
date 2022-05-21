@@ -39,9 +39,7 @@ export default function Nav() {
             data-toggle="dropdown"
             aria-haspopup="true"
             aria-expanded="false"
-          >
-            <p>MENU</p>
-          </a>
+          ></a>
           <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a className="dropdown-item" href="#sobre">
               Sobre
