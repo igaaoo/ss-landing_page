@@ -2,7 +2,10 @@ export function Duvidas() {
   return (
     <div className="mainBody" id="duvidas">
       <div className="insideBody">
+        {/* Título da sessão */}
         <h3 className="titulo">Dúvidas Frequentes</h3>
+
+        {/* Cards de dúvidas */}
         <div className="colapsoDuvidas">
           <div id="accordion">
             <div className="card">

@@ -4,10 +4,12 @@ export default function Nav() {
   return (
     <header>
       <nav>
+        {/* Nome da empresa */}
         <a href="#inicio">
           <h2>SPACE STYLE</h2>
         </a>
 
+        {/* Botões interativos */}
         <ul>
           <li>
             <a href="#sobre">
@@ -31,6 +33,7 @@ export default function Nav() {
           </li>
         </ul>
 
+        {/* Menu para resoluções menores, oculto em telas grandes */}
         <h2 className="nav-item dropdown">
           <a
             className="nav-link dropdown-toggle"

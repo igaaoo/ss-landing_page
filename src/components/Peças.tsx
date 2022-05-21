@@ -1,8 +1,6 @@
 import React, { useRef, useState } from 'react'
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react'
 
-// Import Swiper styles
 import 'swiper/css'
 import 'swiper/css/navigation'
 
@@ -18,12 +16,12 @@ import UniversoRoupa from '../images/roupas/universoRoupa.png'
 
 import '../App.css'
 
-// import required modules
 import { Navigation } from 'swiper'
 
 export function Peças() {
   return (
     <div id="peças">
+      {/* Carousel interativo com imagens e descrições */}
       <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
         <SwiperSlide>
           <img className="imgCarousel" src={Terra} />

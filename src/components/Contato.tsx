@@ -1,4 +1,5 @@
 export function Contato() {
+  // Alerta na tela
   function alert() {
     window.alert('Obrigado por entrar em contato. Em breve retornaremos.')
   }
@@ -6,8 +7,11 @@ export function Contato() {
   return (
     <div className="mainBody" id="contato">
       <div className="insideBody">
+        {/* Título da sessão */}
         <h3 className="titulo">Entre em contato</h3>
-        <div className="contato">
+
+        {/* Formulários */}
+        <div className="contatoForms">
           <form>
             <div className="row">
               <div className="col">
